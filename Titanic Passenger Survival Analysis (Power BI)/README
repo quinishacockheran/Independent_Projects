@@ -1,0 +1,13 @@
+This dashboard explores the key factors that influenced survival during the Titanic disaster using a cleaned version of the Kaggle dataset. Built in Power BI, it uses slicers and visual comparisons to uncover trends by:
+-Passenger Class
+-Gender
+-Age Group (Child, Teen, Adult, etc.)
+-Family Status (Alone vs. With Family)
+
+Key Insights:
+-First-class passengers had the highest survival rates.
+-Women consistently out-survived men across all classes.
+-Children had the best odds of survival, while seniors had the worst.
+-Traveling with family improved survival odds in all classes.
+
+This project demonstrates both my business intelligence storytelling skills and Power BI visualization capabilities.
