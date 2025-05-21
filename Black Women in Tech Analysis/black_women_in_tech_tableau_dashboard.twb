@@ -1,0 +1,2822 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Tech_sector_diversity_demographics_2016' inline='true' name='federated.02k7wtu0o0dx1q0zzqta70dqi3kj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Tech_sector_diversity_demographics_2016' name='textscan.0kgnghz0k7qted16i29sg1v8zu5s'>
+            <connection class='textscan' directory='C:/Users/qscoc' filename='Tech_sector_diversity_demographics_2016.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0kgnghz0k7qted16i29sg1v8zu5s' name='Tech_sector_diversity_demographics_2016.csv' table='[Tech_sector_diversity_demographics_2016#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='job_category' ordinal='0' />
+            <column datatype='string' name='race_ethnicity' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='integer' name='count' ordinal='3' />
+            <column datatype='real' name='percentage' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Tech_sector_diversity_demographics_2016.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_category]</local-name>
+            <parent-name>[Tech_sector_diversity_demographics_2016.csv]</parent-name>
+            <remote-alias>job_category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Tech_sector_diversity_demographics_2016.csv_2CD5EE94C9D745FD9276FD85336C3748]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race_ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race_ethnicity]</local-name>
+            <parent-name>[Tech_sector_diversity_demographics_2016.csv]</parent-name>
+            <remote-alias>race_ethnicity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Tech_sector_diversity_demographics_2016.csv_2CD5EE94C9D745FD9276FD85336C3748]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[Tech_sector_diversity_demographics_2016.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Tech_sector_diversity_demographics_2016.csv_2CD5EE94C9D745FD9276FD85336C3748]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Tech_sector_diversity_demographics_2016.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Tech_sector_diversity_demographics_2016.csv_2CD5EE94C9D745FD9276FD85336C3748]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage]</local-name>
+            <parent-name>[Tech_sector_diversity_demographics_2016.csv]</parent-name>
+            <remote-alias>percentage</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Tech_sector_diversity_demographics_2016.csv_2CD5EE94C9D745FD9276FD85336C3748]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Tech_sector_diversity_demographics_2016.csv' datatype='table' name='[__tableau_internal_object_id__].[Tech_sector_diversity_demographics_2016.csv_2CD5EE94C9D745FD9276FD85336C3748]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Job Category' datatype='string' name='[job_category]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;All workers&quot;' value='Total' />
+        </aliases>
+      </column>
+      <column caption='Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+      <column caption='Race Ethnicity' datatype='string' name='[race_ethnicity]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/qscoc/AppData/Local/Temp/TableauTemp/#TableauTemp_004vbxz0i5dgns16p6zbn1h1wndy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 04:17:54 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>job_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_category</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Tech_sector_diversity_demographics_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race_ethnicity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race_ethnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race_ethnicity</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Tech_sector_diversity_demographics_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Tech_sector_diversity_demographics_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Tech_sector_diversity_demographics_2016.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percentage</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Tech_sector_diversity_demographics_2016.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Tech_sector_diversity_demographics_2016.csv' id='Tech_sector_diversity_demographics_2016.csv_2CD5EE94C9D745FD9276FD85336C3748'>
+            <properties context=''>
+              <relation connection='textscan.0kgnghz0k7qted16i29sg1v8zu5s' name='Tech_sector_diversity_demographics_2016.csv' table='[Tech_sector_diversity_demographics_2016#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='job_category' ordinal='0' />
+                  <column datatype='string' name='race_ethnicity' ordinal='1' />
+                  <column datatype='string' name='gender' ordinal='2' />
+                  <column datatype='integer' name='count' ordinal='3' />
+                  <column datatype='real' name='percentage' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='black_funding_data' inline='true' name='federated.0cbpos8032wfof1aiwxcr0yxduw5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='black_funding_data' name='textscan.1kk7ji51xgwbru10rem8s1nk899e'>
+            <connection class='textscan' directory='C:/Users/qscoc' filename='black_funding_data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1kk7ji51xgwbru10rem8s1nk899e' name='black_funding_data.csv' table='[black_funding_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Category' ordinal='0' />
+            <column datatype='real' name='Percentage' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Source' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[black_funding_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[black_funding_data.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[black_funding_data.csv_1EB77CAEA8E14759BACCB6A42FF3E5F2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[black_funding_data.csv]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[black_funding_data.csv_1EB77CAEA8E14759BACCB6A42FF3E5F2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[black_funding_data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[black_funding_data.csv_1EB77CAEA8E14759BACCB6A42FF3E5F2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source]</local-name>
+            <parent-name>[black_funding_data.csv]</parent-name>
+            <remote-alias>Source</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[black_funding_data.csv_1EB77CAEA8E14759BACCB6A42FF3E5F2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='black_funding_data.csv' datatype='table' name='[__tableau_internal_object_id__].[black_funding_data.csv_1EB77CAEA8E14759BACCB6A42FF3E5F2]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/qscoc/AppData/Local/Temp/TableauTemp/#TableauTemp_0xlzp920kr3j1b17mu6fq0bnxf6v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 04:24:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>0</ordinal>
+              <family>black_funding_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage</remote-alias>
+              <ordinal>1</ordinal>
+              <family>black_funding_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>black_funding_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Source]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Source</remote-alias>
+              <ordinal>3</ordinal>
+              <family>black_funding_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='black_funding_data.csv' id='black_funding_data.csv_1EB77CAEA8E14759BACCB6A42FF3E5F2'>
+            <properties context=''>
+              <relation connection='textscan.1kk7ji51xgwbru10rem8s1nk899e' name='black_funding_data.csv' table='[black_funding_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Category' ordinal='0' />
+                  <column datatype='real' name='Percentage' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='string' name='Source' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Reveal_EEO1_for_2016' inline='true' name='federated.0chptvy0qdu3771cr2hw60jipvcm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Reveal_EEO1_for_2016' name='textscan.1qxtok5164dt471atzyx710dam3z'>
+            <connection class='textscan' directory='C:/Users/qscoc' filename='Reveal_EEO1_for_2016.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qxtok5164dt471atzyx710dam3z' name='Reveal_EEO1_for_2016.csv' table='[Reveal_EEO1_for_2016#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='company' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='string' name='race' ordinal='2' />
+            <column datatype='string' name='gender' ordinal='3' />
+            <column datatype='string' name='job_category' ordinal='4' />
+            <column datatype='integer' name='count' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Reveal_EEO1_for_2016.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[Reveal_EEO1_for_2016.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Reveal_EEO1_for_2016.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[Reveal_EEO1_for_2016.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[Reveal_EEO1_for_2016.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_category]</local-name>
+            <parent-name>[Reveal_EEO1_for_2016.csv]</parent-name>
+            <remote-alias>job_category</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Reveal_EEO1_for_2016.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Reveal_EEO1_for_2016.csv' datatype='table' name='[__tableau_internal_object_id__].[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Job Category' datatype='string' name='[job_category]' role='dimension' type='nominal' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/qscoc/AppData/Local/Temp/TableauTemp/#TableauTemp_0h31n110hgfwrm1bxs13o05dfewp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 04:18:40 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Reveal_EEO1_for_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Reveal_EEO1_for_2016.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Reveal_EEO1_for_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Reveal_EEO1_for_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_category</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Reveal_EEO1_for_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Reveal_EEO1_for_2016.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>494</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Reveal_EEO1_for_2016.csv' id='Reveal_EEO1_for_2016.csv_C6826C6A9FFB40498625745D59E8AF18'>
+            <properties context=''>
+              <relation connection='textscan.1qxtok5164dt471atzyx710dam3z' name='Reveal_EEO1_for_2016.csv' table='[Reveal_EEO1_for_2016#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='company' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='string' name='race' ordinal='2' />
+                  <column datatype='string' name='gender' ordinal='3' />
+                  <column datatype='string' name='job_category' ordinal='4' />
+                  <column datatype='integer' name='count' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Burnout_Comparison_Data' inline='true' name='federated.0u8faf71vx0vkr1dpdeic1oqp57b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Burnout_Comparison_Data' name='textscan.0tnwo8g1l4ftxa13mr8rh0g1v2ds'>
+            <connection class='textscan' directory='C:/Users/qscoc' filename='Burnout_Comparison_Data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tnwo8g1l4ftxa13mr8rh0g1v2ds' name='Burnout_Comparison_Data.csv' table='[Burnout_Comparison_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Group' ordinal='0' />
+            <column datatype='real' name='Percentage' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Burnout_Comparison_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Group]</local-name>
+            <parent-name>[Burnout_Comparison_Data.csv]</parent-name>
+            <remote-alias>Group</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Burnout_Comparison_Data.csv_660C01999499489D86759D92D97A1ABA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[Burnout_Comparison_Data.csv]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Burnout_Comparison_Data.csv_660C01999499489D86759D92D97A1ABA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Burnout_Comparison_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Burnout_Comparison_Data.csv_660C01999499489D86759D92D97A1ABA]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/qscoc/AppData/Local/Temp/TableauTemp/#TableauTemp_0tes6ey04z3rlw1cp95mu07cdj66.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 05:26:59 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Group</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Burnout_Comparison_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percentage</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Burnout_Comparison_Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Burnout_Comparison_Data.csv' id='Burnout_Comparison_Data.csv_660C01999499489D86759D92D97A1ABA'>
+            <properties context=''>
+              <relation connection='textscan.0tnwo8g1l4ftxa13mr8rh0g1v2ds' name='Burnout_Comparison_Data.csv' table='[Burnout_Comparison_Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Group' ordinal='0' />
+                  <column datatype='real' name='Percentage' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Diversity in tech companies' inline='true' name='federated.0vdgiik0i65ksi1eanjk01mc7njz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Diversity in tech companies' name='textscan.0hdmd8s08rbgba1a5vdxu0dhc3ua'>
+            <connection class='textscan' directory='C:/Users/qscoc' filename='Diversity in tech companies.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0hdmd8s08rbgba1a5vdxu0dhc3ua' name='Diversity in tech companies.csv' table='[Diversity in tech companies#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Company' ordinal='1' />
+            <column datatype='integer' name='Female %' ordinal='2' />
+            <column datatype='integer' name='Male %' ordinal='3' />
+            <column datatype='integer' name='% White' ordinal='4' />
+            <column datatype='integer' name='% Asian' ordinal='5' />
+            <column datatype='integer' name='% Latino' ordinal='6' />
+            <column datatype='integer' name='% Black' ordinal='7' />
+            <column datatype='string' name='% Multi' ordinal='8' />
+            <column datatype='string' name='% Other' ordinal='9' />
+            <column datatype='string' name='% Undeclared' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female %</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female %]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>Female %</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male %</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male %]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>Male %</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% White</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% White]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>% White</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% Asian</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% Asian]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>% Asian</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% Latino</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% Latino]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>% Latino</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% Black</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% Black]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>% Black</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% Multi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% Multi]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>% Multi</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% Other</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% Other]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>% Other</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% Undeclared</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[% Undeclared]</local-name>
+            <parent-name>[Diversity in tech companies.csv]</parent-name>
+            <remote-alias>% Undeclared</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Black Women' datatype='real' name='[Calculation_941815284423626752]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[% Black] * [Female %] / 100' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Diversity in tech companies.csv' datatype='table' name='[__tableau_internal_object_id__].[Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/qscoc/AppData/Local/Temp/TableauTemp/#TableauTemp_0epp7211s2z4yu1bepttk1isn96e.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 04:19:12 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Female %</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Female %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Female %</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Male %</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Male %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Male %</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% White</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% White]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% White</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% Asian</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% Asian]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% Asian</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% Latino</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% Latino]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% Latino</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% Black</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% Black]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% Black</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% Multi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[% Multi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% Multi</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% Other</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[% Other]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% Other</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% Undeclared</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[% Undeclared]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% Undeclared</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Diversity in tech companies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Diversity in tech companies.csv' id='Diversity in tech companies.csv_3137B8BEAF9140C982ACD49601B5C6CF'>
+            <properties context=''>
+              <relation connection='textscan.0hdmd8s08rbgba1a5vdxu0dhc3ua' name='Diversity in tech companies.csv' table='[Diversity in tech companies#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Company' ordinal='1' />
+                  <column datatype='integer' name='Female %' ordinal='2' />
+                  <column datatype='integer' name='Male %' ordinal='3' />
+                  <column datatype='integer' name='% White' ordinal='4' />
+                  <column datatype='integer' name='% Asian' ordinal='5' />
+                  <column datatype='integer' name='% Latino' ordinal='6' />
+                  <column datatype='integer' name='% Black' ordinal='7' />
+                  <column datatype='string' name='% Multi' ordinal='8' />
+                  <column datatype='string' name='% Other' ordinal='9' />
+                  <column datatype='string' name='% Undeclared' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Distributions_data_2016' inline='true' name='federated.19jbl8v1xzqta819od08t0le10ja' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Distributions_data_2016' name='textscan.02xas0m1naechp1g1ehl40rf3hei'>
+            <connection class='textscan' directory='C:/Users/qscoc' filename='Distributions_data_2016.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.02xas0m1naechp1g1ehl40rf3hei' name='Distributions_data_2016.csv' table='[Distributions_data_2016#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='company' ordinal='0' />
+            <column datatype='real' name='percentage' ordinal='1' />
+            <column datatype='string' name='demographics' ordinal='2' />
+            <column datatype='string' name='job_category' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Distributions_data_2016.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[Distributions_data_2016.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage]</local-name>
+            <parent-name>[Distributions_data_2016.csv]</parent-name>
+            <remote-alias>percentage</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>demographics</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[demographics]</local-name>
+            <parent-name>[Distributions_data_2016.csv]</parent-name>
+            <remote-alias>demographics</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_category]</local-name>
+            <parent-name>[Distributions_data_2016.csv]</parent-name>
+            <remote-alias>job_category</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Distributions_data_2016.csv' datatype='table' name='[__tableau_internal_object_id__].[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Demographics' datatype='string' name='[demographics]' role='dimension' type='nominal' />
+      <column caption='Job Category' datatype='string' name='[job_category]' role='dimension' type='nominal' />
+      <column caption='Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/qscoc/AppData/Local/Temp/TableauTemp/#TableauTemp_00qkxfh0tovrob18ow0hl0anj4e4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 04:24:12 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Distributions_data_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percentage</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Distributions_data_2016.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1103</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>demographics</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[demographics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>demographics</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Distributions_data_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_category</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Distributions_data_2016.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Distributions_data_2016.csv' id='Distributions_data_2016.csv_96E760392F3D469D9CE5DA3EB8CAC7C5'>
+            <properties context=''>
+              <relation connection='textscan.02xas0m1naechp1g1ehl40rf3hei' name='Distributions_data_2016.csv' table='[Distributions_data_2016#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='company' ordinal='0' />
+                  <column datatype='real' name='percentage' ordinal='1' />
+                  <column datatype='string' name='demographics' ordinal='2' />
+                  <column datatype='string' name='job_category' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='% Black Women in Tech by Role Level Funnel (2016)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tech_sector_diversity_demographics_2016' name='federated.02k7wtu0o0dx1q0zzqta70dqi3kj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02k7wtu0o0dx1q0zzqta70dqi3kj'>
+            <column-instance column='[percentage]' derivation='Avg' name='[avg:percentage:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column caption='Job Category' datatype='string' name='[job_category]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;All workers&quot;' value='Total' />
+              </aliases>
+            </column>
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[job_category]' derivation='None' name='[none:job_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[race_ethnicity]' derivation='None' name='[none:race_ethnicity:nk]' pivot='key' type='nominal' />
+            <column caption='Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+            <column caption='Race Ethnicity' datatype='string' name='[race_ethnicity]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:gender:nk]'>
+            <groupfilter function='member' level='[none:gender:nk]' member='&quot;Female&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:race_ethnicity:nk]'>
+            <groupfilter function='member' level='[none:race_ethnicity:nk]' member='&quot;Black_or_African American&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:job_category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[avg:percentage:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:gender:nk]</column>
+            <column>[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:race_ethnicity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[avg:percentage:qk]' scope='rows' value='Avgerage %' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[avg:percentage:qk]' value='*0.00' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-color' id='refline0' value='#aa00ff4b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <reference-line axis-column='[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[avg:percentage:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[avg:percentage:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#aa00ff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[avg:percentage:qk]</rows>
+        <cols>[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:job_category:nk]</cols>
+      </table>
+      <simple-id uuid='{B4991573-CDBA-4132-B02F-02A92A02FEE4}' />
+    </worksheet>
+    <worksheet name='Average Estimated % Black Women in Tech (2014-2018)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Diversity in tech companies' name='federated.0vdgiik0i65ksi1eanjk01mc7njz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vdgiik0i65ksi1eanjk01mc7njz'>
+            <column datatype='integer' name='[% Black]' role='measure' type='quantitative' />
+            <column caption='% Black Women' datatype='real' name='[Calculation_941815284423626752]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[% Black] * [Female %] / 100' />
+            </column>
+            <column datatype='integer' name='[Female %]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_941815284423626752]' derivation='Avg' name='[avg:Calculation_941815284423626752:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]' field-type='quantitative' max='2.5' min='1.5' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]' scope='rows' value='Average %' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]' value='*0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[none:Year:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[none:Year:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-color' id='refline0' value='#aa00ff4b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <reference-line axis-column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-color' value='#aa00ff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]</rows>
+        <cols>[federated.0vdgiik0i65ksi1eanjk01mc7njz].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{B2E256E3-8C95-486A-B949-E67FA1F7F2FD}' />
+    </worksheet>
+    <worksheet name='Burnout Risk Comparison in Tech'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Burnout_Comparison_Data' name='federated.0u8faf71vx0vkr1dpdeic1oqp57b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0u8faf71vx0vkr1dpdeic1oqp57b'>
+            <column datatype='string' name='[Group]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Percentage]' role='measure' type='quantitative' />
+            <column-instance column='[Percentage]' derivation='Avg' name='[avg:Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Group]' derivation='None' name='[none:Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Percentage]' derivation='Sum' name='[sum:Percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[none:Group:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[sum:Percentage:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[avg:Percentage:qk]' scope='cols' value='Average %' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-color' id='refline0' value='#aa00ff4b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <reference-line axis-column='[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[avg:Percentage:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[avg:Percentage:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#aa00ff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[none:Group:nk]</rows>
+        <cols>[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[avg:Percentage:qk]</cols>
+      </table>
+      <simple-id uuid='{CFD1C239-90C2-4082-B314-9113C9E55173}' />
+    </worksheet>
+    <worksheet name='Gender Inclusion vs Black Representation in Tech Companies'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Diversity in tech companies' name='federated.0vdgiik0i65ksi1eanjk01mc7njz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vdgiik0i65ksi1eanjk01mc7njz'>
+            <column datatype='integer' name='[% Black]' role='measure' type='quantitative' />
+            <column caption='% Black Women' datatype='real' name='[Calculation_941815284423626752]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[% Black] * [Female %] / 100' />
+            </column>
+            <column datatype='string' name='[Company]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Female %]' role='measure' type='quantitative' />
+            <column-instance column='[% Black]' derivation='Avg' name='[avg:% Black:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_941815284423626752]' derivation='Avg' name='[avg:Calculation_941815284423626752:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Female %]' derivation='Avg' name='[avg:Female %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Company]' derivation='None' name='[none:Company:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:% Black:qk]' scope='rows' value='Avgerage % Black' />
+            <format attr='title' class='0' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Female %:qk]' scope='cols' value='Avgerage % Women' />
+            <encoding attr='space' class='0' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Female %:qk]' field-type='quantitative' max='56.854748908296941' min='16.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:% Black:qk]' value='*0.00' />
+            <format attr='text-format' field='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]' value='*0.00' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-color' id='refline0' value='#aa00ff4b' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dotted' />
+            <format attr='stroke-color' id='refline1' value='#aa00ff4b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[none:Company:nk]' />
+              <text column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:% Black:qk]' />
+              <text column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:% Black:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:% Black:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Female %:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Female %:qk]' z-order='2' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Company:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0vdgiik0i65ksi1eanjk01mc7njz].[none:Company:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. % Black:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:% Black:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. % Black Women:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Calculation_941815284423626752:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#aa00ff' />
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:% Black:qk]</rows>
+        <cols>[federated.0vdgiik0i65ksi1eanjk01mc7njz].[avg:Female %:qk]</cols>
+      </table>
+      <simple-id uuid='{DF639F86-37CB-4F46-AED4-F0965AFFE232}' />
+    </worksheet>
+    <worksheet name='Venture Capital Funding &amp; Representation Realities (2023)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='black_funding_data' name='federated.0cbpos8032wfof1aiwxcr0yxduw5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cbpos8032wfof1aiwxcr0yxduw5'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Percentage]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Percentage]' derivation='Sum' name='[sum:Percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0cbpos8032wfof1aiwxcr0yxduw5].[none:Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0cbpos8032wfof1aiwxcr0yxduw5].[sum:Percentage:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0cbpos8032wfof1aiwxcr0yxduw5].[none:Category:nk]' value='bold' />
+            <format attr='color' field='[federated.0cbpos8032wfof1aiwxcr0yxduw5].[none:Category:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0cbpos8032wfof1aiwxcr0yxduw5].[sum:Percentage:qk]' value='bold' />
+            <format attr='color' field='[federated.0cbpos8032wfof1aiwxcr0yxduw5].[sum:Percentage:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-color' id='refline0' value='#aa00ff4b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.0cbpos8032wfof1aiwxcr0yxduw5].[sum:Percentage:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0cbpos8032wfof1aiwxcr0yxduw5].[sum:Percentage:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#aa00ff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cbpos8032wfof1aiwxcr0yxduw5].[none:Category:nk]</rows>
+        <cols>[federated.0cbpos8032wfof1aiwxcr0yxduw5].[sum:Percentage:qk]</cols>
+      </table>
+      <simple-id uuid='{3DADA74B-23F1-411B-9BBA-8CCB7633C75F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Black Women in Tech: A Data Story'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='4166' id='9' type-v2='text' w='32942' x='586' y='1042'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000'>📈 </run>
+              <run fontalignment='1' fontcolor='#000000' italic='true'>Representation Over Time</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4166' id='10' type-v2='text' w='32944' x='33528' y='1042'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000'>🧩 </run>
+              <run fontalignment='1' fontcolor='#000000' italic='true'>Role-Level Visibility</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4166' id='11' type-v2='text' w='32942' x='66472' y='1042'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000'>🔥 </run>
+              <run fontalignment='1' fontcolor='#000000' italic='true'>Burnout Risk Gaps</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4167' id='12' type-v2='text' w='49414' x='586' y='50000'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000'>⚖️ </run>
+              <run fontalignment='1' fontcolor='#000000' italic='true'>Inclusivity Isn’t Intersectional</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4167' id='13' type-v2='text' w='49414' x='50000' y='50000'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000'>💸 </run>
+              <run fontalignment='1' fontcolor='#000000' italic='true'>Access to Funding Realities</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='44792' id='16' is-fixed='true' type-v2='layout-basic' w='98828' x='586' y='5208'>
+            <zone h='44792' id='14' param='horz' type-v2='layout-flow' w='32943' x='586' y='5208'>
+              <zone h='44792' id='3' name='Average Estimated % Black Women in Tech (2014-2018)' w='32943' x='586' y='5208'>
+                <layout-cache minwidth='155' type-h='fixed' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='44792' id='18' is-fixed='true' type-v2='layout-basic' w='65885' x='33529' y='5208'>
+              <zone h='44792' id='17' param='horz' type-v2='layout-flow' w='30087' x='33529' y='5208'>
+                <zone h='44792' id='5' name='% Black Women in Tech by Role Level Funnel (2016)' w='30087' x='33529' y='5208'>
+                  <layout-cache cell-count-w='4' minheight='212' non-cell-size-w='55' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='44792' id='19' param='horz' type-v2='layout-flow' w='35798' x='63616' y='5208'>
+                <zone h='44792' id='6' name='Burnout Risk Comparison in Tech' w='35798' x='63616' y='5208'>
+                  <layout-cache minwidth='260' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='44791' id='15' param='horz' type-v2='layout-flow' w='98828' x='586' y='54167'>
+            <zone h='44791' id='7' name='Gender Inclusion vs Black Representation in Tech Companies' w='45460' x='586' y='54167'>
+              <layout-cache minwidth='152' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='44791' id='8' name='Venture Capital Funding &amp; Representation Realities (2023)' w='53367' x='46046' y='54167'>
+              <layout-cache minwidth='260' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='22' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone forceUpdate='true' h='4166' id='9' type-v2='text' w='32942' x='586' y='1042'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000'>📈 </run>
+                    <run fontalignment='1' fontcolor='#000000' italic='true'>Representation Over Time</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4166' id='10' type-v2='text' w='32944' x='33528' y='1042'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000'>🧩 </run>
+                    <run fontalignment='1' fontcolor='#000000' italic='true'>Role-Level Visibility</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4166' id='11' type-v2='text' w='32942' x='66472' y='1042'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000'>🔥 </run>
+                    <run fontalignment='1' fontcolor='#000000' italic='true'>Burnout Risk Gaps</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44792' id='3' is-fixed='true' name='Average Estimated % Black Women in Tech (2014-2018)' w='32943' x='586' y='5208'>
+                  <layout-cache minwidth='155' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44792' id='5' is-fixed='true' name='% Black Women in Tech by Role Level Funnel (2016)' w='30087' x='33529' y='5208'>
+                  <layout-cache cell-count-w='4' minheight='212' non-cell-size-w='55' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44792' id='6' is-fixed='true' name='Burnout Risk Comparison in Tech' w='35798' x='63616' y='5208'>
+                  <layout-cache minwidth='260' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4167' id='12' type-v2='text' w='49414' x='586' y='50000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000'>⚖️ </run>
+                    <run fontalignment='1' fontcolor='#000000' italic='true'>Inclusivity Isn’t Intersectional</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4167' id='13' type-v2='text' w='49414' x='50000' y='50000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000'>💸 </run>
+                    <run fontalignment='1' fontcolor='#000000' italic='true'>Access to Funding Realities</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44791' id='7' is-fixed='true' name='Gender Inclusion vs Black Representation in Tech Companies' w='45460' x='586' y='54167'>
+                  <layout-cache minwidth='152' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44791' id='8' is-fixed='true' name='Venture Capital Funding &amp; Representation Realities (2023)' w='53367' x='46046' y='54167'>
+                  <layout-cache minwidth='260' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{98E350F8-76C9-404C-9930-2CFB4148AD33}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='135'>
+    <window class='worksheet' name='Average Estimated % Black Women in Tech (2014-2018)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vdgiik0i65ksi1eanjk01mc7njz].[none:Female %:qk]</field>
+            <field>[federated.0vdgiik0i65ksi1eanjk01mc7njz].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9E922775-CDE8-4B24-A940-572CCBA63619}' />
+    </window>
+    <window class='worksheet' name='% Black Women in Tech by Role Level Funnel (2016)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[avg:percentage:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:gender:nk]</field>
+            <field>[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:job_category:nk]</field>
+            <field>[federated.02k7wtu0o0dx1q0zzqta70dqi3kj].[none:race_ethnicity:nk]</field>
+            <field>[federated.0chptvy0qdu3771cr2hw60jipvcm].[none:gender:nk]</field>
+            <field>[federated.0chptvy0qdu3771cr2hw60jipvcm].[none:job_category:nk]</field>
+            <field>[federated.0chptvy0qdu3771cr2hw60jipvcm].[none:race:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ABAA63A8-7C6C-4C27-94BE-DA61CB9F4222}' />
+    </window>
+    <window class='worksheet' name='Burnout Risk Comparison in Tech'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[avg:Percentage:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0u8faf71vx0vkr1dpdeic1oqp57b].[none:Group:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B8BD7BF8-5035-478A-BA4C-66F58D1B7CB7}' />
+    </window>
+    <window class='worksheet' name='Gender Inclusion vs Black Representation in Tech Companies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vdgiik0i65ksi1eanjk01mc7njz].[none:Company:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AE70548F-A889-4521-ACED-A95AD0303632}' />
+    </window>
+    <window class='worksheet' name='Venture Capital Funding &amp; Representation Realities (2023)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0cbpos8032wfof1aiwxcr0yxduw5].[sum:Percentage:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cbpos8032wfof1aiwxcr0yxduw5].[none:Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A69F4D49-6639-4D80-BA21-8912F707489F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Black Women in Tech: A Data Story'>
+      <viewpoints>
+        <viewpoint name='% Black Women in Tech by Role Level Funnel (2016)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Estimated % Black Women in Tech (2014-2018)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Burnout Risk Comparison in Tech'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender Inclusion vs Black Representation in Tech Companies'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Venture Capital Funding &amp; Representation Realities (2023)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4FF76A27-D295-49CF-9FD4-92749286BB2E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='% Black Women in Tech by Role Level Funnel (2016)' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Average Estimated % Black Women in Tech (2014-2018)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Black Women in Tech: A Data Story' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Burnout Risk Comparison in Tech' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Gender Inclusion vs Black Representation in Tech Companies' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Venture Capital Funding &amp; Representation Realities (2023)' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
