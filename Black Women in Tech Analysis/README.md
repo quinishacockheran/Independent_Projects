@@ -8,17 +8,17 @@ This project explores the historical and ongoing underrepresentation of Black wo
 Despite public commitments to diversity, equity, and inclusion (DEI), Black women remain among the most underrepresented and overlooked groups in tech. This project was created to highlight the real data behind that reality, using visual storytelling and data-driven analysis to drive understanding, urgency, and future-focused solutions rooted in equity and truth.
 
 ## Tools Used  
-- **Jupyter Notebook** – data cleaning, exploration, and visualization  
-- **Pandas** – data manipulation and filtering  
-- **Matplotlib** – visual charts in branded style  
-- **Adobe Express** – final storytelling presentation  
-- **Tableau Public** – interactive exploratory dashboard  
-- **GitHub** – version control and publication
+- **Jupyter Notebook** - data cleaning, exploration, and visualization  
+- **Pandas** - data manipulation and filtering  
+- **Matplotlib** - visual charts in branded style  
+- **Adobe Express** - final storytelling presentation  
+- **Tableau Public** - interactive exploratory dashboard  
+- **GitHub** - version control and publication
 
 ## Methodology  
 
 1. **Data Collection**  
-   - Public datasets from Kaggle, including tech diversity disclosures (2014–2018), HR dashboards, and funding records  
+   - Public datasets from Kaggle, including tech diversity disclosures (2014-2018), HR dashboards, and funding records  
    - Government and organizational disclosures (EEO-1, Tech Sector Demographics)  
    - Manually extracted statistics from credible reports (CIO.com, McKinsey, Crunchbase, AnitaB.org, Deloitte)
 
