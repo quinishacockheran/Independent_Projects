@@ -5,12 +5,12 @@ This repository is a curated collection of independent data projects designed to
 ---
 
 ## 🧰 Tools & Technologies
-- **Python** – Data cleaning, preprocessing, and exploratory analysis  
-- **SQL** – Data extraction, joins, filtering, and aggregations  
+- **Python** - Data cleaning, preprocessing, and exploratory analysis  
+- **SQL** - Data extraction, joins, filtering, and aggregations  
 - **Power BI** - Interactive dashboards and operational reporting  
-- **Tableau** – Visual storytelling and presentation  
+- **Tableau** - Visual storytelling and presentation  
 - **pandas, seaborn, matplotlib** - In-depth analysis and visuals  
-- **GitHub** – Version control and professional portfolio management
+- **GitHub** - Version control and professional portfolio management
 - **Adobe Express** - Visual storytelling and presentation
 
 ---
