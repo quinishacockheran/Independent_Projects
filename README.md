@@ -7,9 +7,9 @@ This repository is a curated collection of independent data projects designed to
 ## 🧰 Tools & Technologies
 - **Python** – Data cleaning, preprocessing, and exploratory analysis  
 - **SQL** – Data extraction, joins, filtering, and aggregations  
-- **Power BI** – Interactive dashboards and operational reporting  
+- **Power BI** - Interactive dashboards and operational reporting  
 - **Tableau** – Visual storytelling and presentation  
-- **pandas, seaborn, matplotlib** – In-depth analysis and visuals  
+- **pandas, seaborn, matplotlib** - In-depth analysis and visuals  
 - **GitHub** – Version control and professional portfolio management
 - **Adobe Express** - Visual storytelling and presentation
 
@@ -26,7 +26,7 @@ This repository is a curated collection of independent data projects designed to
 ---
 
 ## 💡 Purpose of These Projects
-These projects reflect my growth as a data professional, combining both analytical and creative approaches. Each one contributes to my portfolio by highlighting my versatility in tools, thinking, and communication — preparing me for work in data analytics, business intelligence, and digital storytelling.
+These projects reflect my growth as a data professional, combining both analytical and creative approaches. Each one contributes to my portfolio by highlighting my versatility in tools, thinking, and communication - preparing me for work in data analytics, business intelligence, and digital storytelling.
 
 ---
 
