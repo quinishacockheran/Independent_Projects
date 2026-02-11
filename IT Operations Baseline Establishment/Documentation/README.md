@@ -20,10 +20,10 @@ The objective of this deployment was to move beyond a standard "daily-use" confi
 - Determined that legacy system files and partition fragmentation were the root causes of the suboptimal baseline
 
 **Storage Sanitation & OS Deployment**
-- Executed a full drive wipe to eliminate legacy partition tables and potential software conflicts
-- Clean-installed Windows 11 Pro from verified external boot media to ensure system integrity
+- Allocated primary partitions for the host OS while maintaining a clean, single-volume baseline to maximize resources for Type-2 Hypervisors.
+- Prepared hardware-level virtualization settings (Intel VT-x) to support a dual-layer Linux environment: WSL 2 for CLI proficiency and VirtualBox for full GUI experimentation.
 
-**Strategic Partitioning & Optimization**
+**Strategic Partitioning & Virtualization Prep**
 - Allocated primary partitions for the host OS while strategically reserving unallocated space for future Linux (dual-boot) integration
 - Configured hardware-level virtualization settings to support future Type-2 hypervisor labs
 
