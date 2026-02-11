@@ -1,6 +1,6 @@
 # Independent Projects
 
-This repository is a curated collection of independent projects in information technology, business intelligence, and/or data analytics projects designed to showcase my ability to analyze real-world problems, apply technical skills, and communicate effectively. Each project lives in its own folder with detailed artifacts, documentation, and insights.
+This repository is a curated collection of independent information technology, business intelligence, and/or data analytics projects designed to showcase my ability to analyze real-world problems, apply technical skills, and communicate effectively. Each project lives in its own folder with detailed artifacts, documentation, and insights.
 
 ---
 
