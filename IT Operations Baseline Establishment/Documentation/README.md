@@ -31,12 +31,12 @@ The objective of this deployment was to move beyond a standard "daily-use" confi
 - Verified system stability and baseline performance
 - Developed this Technical SOP to document the recovery process and establish a repeatable deployment standard
 
-**Key Findings (Lessons Learned)**
+### Key Findings (Lessons Learned)
 - Strategic Pivoting: In technical operations, identifying the point where "repair" becomes less efficient than "rebuild" is critical for maintaining project timelines
 - Environment Isolation: A clean-slate deployment is the only way to ensure 100% hardware-software compatibility for high-level virtualization labs
 - Documentation Value: Establishing a baseline recovery SOP saves hours of future debugging by providing a known, stable starting point
 
-**Outcomes**
+### Outcomes
 - A functional, high-performance IT Lab environment ready for CompTIA A+ simulations  
 - A standardized "Fresh Start" deployment manual for future workstation re-engineering
 - Successfully integrated host-level and kernel-level stability for cross-platform experimentation
