@@ -5,7 +5,7 @@ By Quinisha Cockheran  
 This project details the systematic re-engineering of a primary workstation to serve as a high-performance laboratory for CompTIA A+ simulations and multi-OS experimentation. Following a critical failure of secondary kernel integration (WSL 2), a strategic decision was made to execute a full system recovery. This ensured a "Pristine State" baseline, optimized for virtualization, secure sandboxing, and cross-platform development.   
 
 ### Purpose
-The objective of this deployment was to move beyond a standard "daily-use" configuration into a dedicated IT Operations environment. By establishing a clean hardware-software baseline, this project ensures 100% compatibility for advanced hypervisor testing and custom disk partitioning—reducing future technical debt and troubleshooting overhead.   
+The objective of this deployment was to move beyond a standard "daily-use" configuration into a dedicated IT Operations environment. By establishing a clean hardware-software baseline, this project ensures 100% compatibility for advanced hypervisor testing and custom disk partitioning, reducing future technical debt and troubleshooting overhead.   
 
 ### Tools Used
 - Windows 11 Pro - Host Operating System and primary administrative environment
