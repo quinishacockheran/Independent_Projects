@@ -10,8 +10,8 @@ The objective of this deployment was to move beyond a standard "daily-use" confi
 ## Tools Used
 - Windows 11 Pro - Host Operating System and primary administrative environment
 - Windows Media Creation Tool - For clean-slate OS deployment and storage sanitation
-- Disk Management / DiskPart - For strategic partition allocation and unallocated space reservation
-- BIOS/UEFI Firmware - Hardware-level optimization for virtualization (Intel VT-x/AMD-V)
+- Disk Management/DiskPart - For strategic partition allocation and unallocated space reservation
+- BIOS/UEFI Firmware - Hardware-level optimization for virtualization (Intel VT-x)
 - GitHub - For version control and Technical SOP documentation
 
 ## Methodology
