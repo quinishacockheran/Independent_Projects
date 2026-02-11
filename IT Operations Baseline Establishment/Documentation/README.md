@@ -32,7 +32,7 @@ The objective of this deployment was to move beyond a standard "daily-use" confi
 - Developed this Technical SOP to document the recovery process and establish a repeatable deployment standard
 
 ## Key Findings (Lessons Learned)
-- Strategic Pivoting: In technical operations, identifying the point where "repair" becomes less efficient than "rebuild" is critical for maintaining project timelines
+- Strategic Pivoting: Identifying the point where "repair" becomes less efficient than "rebuild" is critical for maintaining project timelines
 - Environment Isolation: A clean-slate deployment is the only way to ensure 100% hardware-software compatibility for high-level virtualization labs
 - Documentation Value: Establishing a baseline recovery SOP saves hours of future debugging by providing a known, stable starting point
 
