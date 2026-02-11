@@ -2,7 +2,7 @@
 **By Quinisha Cockheran**
 
 ## Executive Summary  
-This project explores the historical and ongoing underrepresentation of Black women in the tech industry through real-world data and visual storytelling. Using structured datasets and public industry reports, this analysis identifies key trends in representation, opportunity, satisfaction, burnout, and venture capital funding. The project culminates in a dual-format presentation—one designed for visual impact (Adobe Express), and one built for exploratory analysis (Tableau)—aimed at raising awareness and calling for structural equity in the innovation economy.
+This project explores the historical and ongoing underrepresentation of Black women in the tech industry through real-world data and visual storytelling. Using structured datasets and public industry reports, this analysis identifies key trends in representation, opportunity, satisfaction, burnout, and venture capital funding. The project culminates in a dual-format presentation, one designed for visual impact (Adobe Express), and one built for exploratory analysis (Tableau), aimed at raising awareness and calling for structural equity in the innovation economy.
 
 ## Purpose  
 Despite public commitments to diversity, equity, and inclusion (DEI), Black women remain among the most underrepresented and overlooked groups in tech. This project was created to highlight the real data behind that reality, using visual storytelling and data-driven analysis to drive understanding, urgency, and future-focused solutions rooted in equity and truth.
@@ -44,7 +44,7 @@ Despite public commitments to diversity, equity, and inclusion (DEI), Black wome
 - In 2023, Black women received only **0.34%** of all venture capital funding.  
 - Black women are underrepresented in leadership and innovation teams at every career level.  
 - Burnout and emotional strain are not caused by lack of ability, but by systemic exclusion and insufficient structural support.  
-- Gender inclusion does not guarantee racial inclusion—many companies scoring high on gender metrics fail on racial diversity.  
+- Gender inclusion does not guarantee racial inclusion, many companies scoring high on gender metrics fail on racial diversity.  
 - DEI rollback efforts pose additional mental and professional threats to already marginalized workers.
 
 ## Outcomes  
