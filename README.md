@@ -37,7 +37,7 @@ This repository is a curated collection of independent data projects designed to
 ---
 
 ## 💡 Purpose of These Projects
-These projects reflect my growth as a data professional, combining both analytical and creative approaches. Each one contributes to my portfolio by highlighting my versatility in tools, thinking, and communication - preparing me for work in data analytics, business intelligence, and digital storytelling.
+These projects reflect my growth as an IT professional. Each one contributes to my portfolio by highlighting my versatility in tools, thinking, and communication in information technology, business intelligence, and/or data analytics.
 
 ---
 
