@@ -1,4 +1,4 @@
-# Standard Operating Procedure (SOP):
+# Standard Operating Procedure (SOP)
 
 ## 1. Baseline Establishment (Host Recovery)
 - Execute full storage sanitation and a clean-slate Windows 11 Home deployment via the Media Creation Tool to eliminate legacy driver interference.
