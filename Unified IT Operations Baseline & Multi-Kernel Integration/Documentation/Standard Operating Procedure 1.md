@@ -16,3 +16,7 @@
 ## 4. Workspace Optimization
 - Install VirtualBox Guest Additions to enable bidirectional clipboard support.
 - Manually map the display resolution to 1600x900 to resolve scaling and "letterboxing" issues.
+
+--
+
+*Updated as needed. Last update: February 12, 2026*
