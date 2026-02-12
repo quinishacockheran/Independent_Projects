@@ -8,7 +8,7 @@ This project details the systematic re-engineering of a primary workstation to s
 The objective was to establish a dedicated IT Operations environment on a clean hardware-software baseline. This ensures 100% compatibility for parallel Linux environments, allowing for simultaneous native kernel operations (WSL 2) and full-system virtualization (VirtualBox) without legacy system interference.
 
 ## Tools Used
-- **Windows 11 Pro:** Host Operating System and primary administrative environment
+- **Windows 11 Home:** Host Operating System and primary administrative environment
 - **Windows Media Creation Tool:** Used for host OS deployment and full storage sanitation
 - **Windows Terminal:** Primary interface used to initialize the WSL 2 backend and manage Linux distributions
 - **Oracle VM VirtualBox 7.0:** Type-2 Hypervisor used for full-system GUI Linux testing
