@@ -29,9 +29,9 @@ The objective was to establish a dedicated IT Operations environment on a clean 
 - Hypervisor Setup: Configured a dedicated VirtualBox instance with 25GB of allocated storage for Ubuntu 24.04.3 LTS
 - CLI Troubleshooting: Resolved a graphical installer hang during the Ubuntu Pro setup by pivoting to the terminal to manually finalize registration
 - Enterprise Integration:
-- Manually attached the system to Ubuntu Pro using a personal token via terminal
-- Enabled ESM (Expanded Security Maintenance) and Livepatch for continuous security patching
-- Successfully executed a 105.4 MB system update cycle through the Software Updater
+-- Manually attached the system to Ubuntu Pro using a personal token via terminal
+-- Enabled ESM (Expanded Security Maintenance) and Livepatch for continuous security patching
+-- Successfully executed a 105.4 MB system update cycle through the Software Updater
 
 **Phase 4: Workspace & Display Optimization**
 - Driver Integration: Installed VirtualBox Guest Additions to enable bidirectional clipboard support and advanced graphics handling
