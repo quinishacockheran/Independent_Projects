@@ -1,4 +1,5 @@
 # Hardware & Host Environment Audit
+This document is the technical baseline for the Unified IT Operations project. It gives a snapshot of the hardware and host OS setup used for virtualization. By auditing the host system resources like the CPU, RAM, and firmware, this artifact proves the environment is ready for WSL 2 and VirtualBox. It ensures all testing starts on a stable and fast foundation.
 
 ## Host System Specifications
 - Device Model: HP Laptop 17-by4xxx
@@ -13,7 +14,7 @@
 - VirtualBox Version: 7.0.x
 
 ##Baseline Resource Allocation
-- Guest OS (Ubuntu): Allocated 4096 MB RAM (Standard Lab Configuration)
+- Guest OS (Ubuntu): Allocated 4096 MB RAM
 - Storage Allocation: 25.00 GB Dynamically Allocated VDI
 - Graphics: VMSVGA with 3D Acceleration enabled
 - Native Target Resolution: 1920 x 1080 (Full-Screen Mode)
