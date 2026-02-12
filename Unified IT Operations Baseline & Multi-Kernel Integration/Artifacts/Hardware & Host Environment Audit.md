@@ -13,7 +13,7 @@ This document is the technical baseline for the Unified IT Operations project. I
 - WSL 2 Backend: Enabled and integrated with Windows 11 Host
 - VirtualBox Version: 7.0.x
 
-##Baseline Resource Allocation
+## Baseline Resource Allocation
 - Guest OS (Ubuntu): Allocated 4096 MB RAM
 - Storage Allocation: 25.00 GB Dynamically Allocated VDI
 - Graphics: VMSVGA with 3D Acceleration enabled
