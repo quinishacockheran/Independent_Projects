@@ -19,7 +19,6 @@ The objective was to establish a dedicated IT Operations environment on a clean 
 ## Methodology
 **Phase 1: Host Recovery & Hardware Optimization**
 - System Sanitation: Executed a clean-slate Windows 11 Home deployment to eliminate legacy driver conflicts and kernel-level errors
-- Firmware Configuration: Optimized BIOS/UEFI settings to enable Intel VT-x, providing the necessary hardware-abstraction layer for both WSL 2 and VirtualBox
 
 **Phase 2: Native Kernel Integration (WSL 2)**
 - Backend Initialization: Utilized the Windows Terminal to enable the Virtual Machine Platform and Windows Subsystem for Linux features
