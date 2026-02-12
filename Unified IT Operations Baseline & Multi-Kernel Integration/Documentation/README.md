@@ -13,6 +13,7 @@ The objective was to establish a dedicated IT Operations environment on a clean 
 - **Windows Terminal:** Primary interface used to initialize the WSL 2 backend and manage Linux distributions
 - **Oracle VM VirtualBox 7.0:** Type-2 Hypervisor used for full-system GUI Linux testing
 - **BIOS/UEFI Firmware:** Configured for hardware-level virtualization support (Intel VT-x)
+- **Google Slides:** Used for visual documentation, high-impact technical galleries, and project insights
 - **GitHub:** For repository management, version control, and Technical SOP documentation
 
 ## Methodology
