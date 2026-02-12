@@ -46,5 +46,3 @@ Each project folder contains:
 - **Documentation:** A project-specific `README.md` or Technical SOP
 - **Artifacts:** Code (Python/SQL/Bash), datasets, or configuration logs
 - **Insights:** Visualizations or summaries of findings
-
-*Current Project: Establishing a multi-OS IT Lab for CompTIA A+ laboratory simulations.*
