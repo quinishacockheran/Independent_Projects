@@ -1,4 +1,4 @@
-### Unified IT Operations Baseline & Multi-Kernel Integration
+# Unified IT Operations Baseline & Multi-Kernel Integration
 By Quinisha Cockheran
 
 ### Executive Summary
