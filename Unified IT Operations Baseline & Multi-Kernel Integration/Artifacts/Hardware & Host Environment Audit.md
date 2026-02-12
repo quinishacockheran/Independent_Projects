@@ -1,4 +1,4 @@
-# Artifact: Hardware & Host Environment Audit
+# Hardware & Host Environment Audit
 
 ## Host System Specifications
 - Device Model: HP Laptop 17-by4xxx
