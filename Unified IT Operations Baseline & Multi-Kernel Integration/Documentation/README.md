@@ -22,7 +22,7 @@ The objective was to establish a dedicated IT Operations environment on a clean 
 
 **Phase 2: Native Kernel Integration (WSL 2)**
 - Backend Initialization: Utilized the Windows Terminal to enable the Virtual Machine Platform and Windows Subsystem for Linux features
-- Environment Deployment: Successfully deployed Ubuntu 24.04 LTS via the native WSL 2 architecture
+- Environment Deployment: Successfully installed and deployed Ubuntu 24.04 LTS via the native WSL 2 architecture
 - Verification: Configured UNIX user credentials and verified shell accessibility, establishing a stable CLI-based Linux environment directly integrated with the Windows host
 
 **Phase 3: Full Virtualization & Security Hardening (VirtualBox)**
