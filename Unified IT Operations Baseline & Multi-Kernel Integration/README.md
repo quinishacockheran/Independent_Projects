@@ -1,7 +1,7 @@
 # Unified IT Operations Baseline & Multi-Kernel Integration
 By Quinisha Cockheran
 
-### Executive Summary
+## Executive Summary
 This project details the systematic re-engineering of a primary workstation to serve as a high-performance laboratory for multi-OS experimentation. Following a critical failure of secondary kernel integration (WSL 2), a strategic decision was made to execute a full system recovery to ensure a "Pristine State" baseline optimized for virtualization and cross-platform development.
 
 Purpose
