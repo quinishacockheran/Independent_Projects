@@ -35,7 +35,7 @@ The objective was to establish a dedicated IT Operations environment on a clean 
 
 **Phase 4: Workspace & Display Optimization**
 - Driver Integration: Installed VirtualBox Guest Additions to enable bidirectional clipboard support and advanced graphics handling
-- Display Mapping: Corrected initial scaling issues and "letterboxing" by configuring a hardware-matched resolution of 1920x1080 in Full-Screen mode
+- Display Mapping: Corrected initial scaling and "letterboxing" by manually configuring a 1600x900 resolution to optimize UI element visibility and provide a more comfortable viewing experience within the virtualized environment
 
 ## Key Findings
 - Technical Integrity: Proved that a clean-slate deployment is the only reliable method for ensuring 100% compatibility between hardware and multiple virtualized kernels
